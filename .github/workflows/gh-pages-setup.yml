@@ -5,13 +5,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 14
+    - name: Checkout
+      uses: actions/checkout@main
 
     - name: Vuepress deploy
-      uses: jenkey2011/vuepress-deploy@1.0.1
+      uses: jenkey2011/vuepress-deploy@1.8.1
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BUILD_SCRIPT: yarn && yarn build:docs
