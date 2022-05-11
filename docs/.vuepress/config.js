@@ -1,6 +1,4 @@
-import { defineConfig } from "vitepress"
-
-export default defineConfig({
+module.exports = {
     title: 'Diary',
     description: 'Feelings',
     base: '/diary/',
@@ -38,7 +36,7 @@ export default defineConfig({
         ],
     ],
     themeConfig: {
-        repo: '',
+        repo: 'kworkbee/diary',
         editLinks: false,
         docsDir: '',
         editLinkText: '',
@@ -65,4 +63,4 @@ export default defineConfig({
             }],
         }
     }
-})
+}

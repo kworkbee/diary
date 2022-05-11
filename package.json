@@ -4,12 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:serve": "vuepress serve docs",
     "deploy": "git subtree push --prefix docs/dist origin gh-pages"
   },
   "devDependencies": {
-    "vitepress": "^0.22.4"
+    "vuepress": "^1.9.7"
   }
 }
