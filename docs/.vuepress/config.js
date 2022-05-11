@@ -54,13 +54,11 @@ module.exports = {
                 link: 'https://about.g1tommy.me/resume'
             }
         ],
-        sidebar: {
-            '/': [{
-                text: 'Diary',
-                children: [
-                  { text: '220511', link: '/220511' },
-                ]
-            }],
-        }
+        sidebar:  [{
+            title: 'Diary',
+            children: [
+                '220511'
+            ]
+          },
     }
 }
