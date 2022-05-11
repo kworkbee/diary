@@ -59,6 +59,6 @@ module.exports = {
             children: [
                 '220511'
             ]
-          },
+        }]
     }
 }
