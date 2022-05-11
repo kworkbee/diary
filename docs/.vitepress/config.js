@@ -1,4 +1,6 @@
-export default {
+import { defineConfig } from "vitepress"
+
+export default defineConfig({
     title: 'Diary',
     description: 'Feelings',
     base: '/diary/',
@@ -54,11 +56,13 @@ export default {
                 link: 'https://about.g1tommy.me/resume'
             }
         ],
-        sidebar: [{
-            title: '220511',
-            children: [
-                '220511'
-            ]
-        }]
+        sidebar: {
+            '/': [{
+                text: 'Diary',
+                children: [
+                  { text: '220511', link: '/220511' },
+                ]
+            }],
+        }
     }
-}
+})
