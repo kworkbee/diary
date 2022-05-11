@@ -57,7 +57,8 @@ module.exports = {
         sidebar:  [{
             title: 'Diary',
             children: [
-                '220511'
+                '220511',
+                '220512',
             ]
         }]
     }
